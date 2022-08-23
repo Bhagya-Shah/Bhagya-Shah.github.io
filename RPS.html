@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC_Game</title>
+    <link rel="stylesheet" href="styleRPS.css">
+</head>
+<body>
+    <div style="display: flex;">
+        <button id="rock" class="box" style="background-color: rgb(85, 59, 199);" onclick="game('rock')">Rock</button>
+        <button id="paper" class="box" style="background-color: red;" onclick="game('paper')">Paper</button>
+        <button id="scissors" class="box" style="background-color: green;" onclick="game('scissors')">Scissors</button>
+    </div> 
+    <div id="selection">Start Select</div>
+    <div id="score">
+        <table align="center" border="10px">
+            <tr>
+                <th>User</th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <td id="scoreUser">0</td>
+                <td id="scorePc">0</td>
+            </tr>
+        </table></div>
+        <!-- <p style="text-align: center;"></p> -->
+        <button id="reset" class="box" style="background-color: rgb(206, 215, 105); margin-left: 165px;" onclick="game('reset')">Reset</button>
+        <script src="scriptRCP.js"></script>
+    </body>
+</html>
